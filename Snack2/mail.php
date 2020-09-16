@@ -7,8 +7,6 @@ $age = $_GET['age'];
 if(strlen($name) < 3 || empty($mail) ||  is_numeric($age) == false){
     $text = 'accesso negato';
 } else {
-    // var_dump(strpos($mail,'@'));
-    //
     if((strpos($mail,'@') !== false) && (strpos($mail,'.') !== false)){
     $text = $name . $mail . $age;
     } else {
