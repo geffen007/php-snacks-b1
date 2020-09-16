@@ -38,16 +38,18 @@
 <html lang="en" dir="ltr">
     <head>
         <meta charset="utf-8">
-        <title></title>
+        <link rel="stylesheet" href="css/style.css">
+        <title>Basket</title>
     </head>
     <body>
         <h2>Giornata 17</h2>
         <?php for($i = 0; $i < count($partite); $i++){ ?>
-            <div class="partita<?php echo $i ?>">
-                <div class="casa"><?php echo $partite[$i]['casa'] ?></div>
-                <div class="ospite"><?php echo $partite[$i]['ospite'] ?></div>
-                <div class="pticasa"><?php echo $partite[$i]['pticasa'] ?></div>
-                <div class="ptiospite"><?php echo $partite[$i]['ptiospite'] ?></div>
+            <div class="partita<?php echo $i ?> partita">
+                <div class="casa team"><?php echo $partite[$i]['casa'] ?></div>
+                <div class="pticasa pti"><?php echo $partite[$i]['pticasa'] ?></div>
+                <div class="ptiospite pti"><?php echo $partite[$i]['ptiospite'] ?></div>
+                <div class="ospite team"><?php echo $partite[$i]['ospite'] ?></div>
+
 
             </div>
         <?php } ?>

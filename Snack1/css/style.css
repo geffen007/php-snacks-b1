@@ -1,0 +1,16 @@
+.partita {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    border: 1px solid blue;
+}
+
+.pti {
+    width: 10%;
+    text-align: center;
+}
+
+.team {
+    width: 40%;
+    text-align: center;
+}
